@@ -1,0 +1,147 @@
+
+            body{
+                background-color: green;
+                color: rgb(252, 250, 247);
+            }
+            .outer{
+                background-color: green;
+
+            }
+            img{
+                
+                display: flex;
+            }
+            .intro{
+                display: flex;
+            }
+
+            .navlist{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            .Navlist ul{
+                display: flex;
+                list-style: none;
+                margin: 1px;
+                padding: 17px;
+            }
+            .Navlist a{
+                font-weight: bold;
+                text-decoration: underline;
+                list-style: none;
+                padding: 7px;
+
+            }
+            a{
+                color: black;
+            }
+             a:hover{
+                transition: 1s;
+                color: aliceblue;
+
+            }
+
+           
+            .form{
+                margin: 4px;
+                border: 2px solid black;
+                border-radius: 2px;
+                background-color: rgb(59, 56, 56);
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(252, 250, 247);
+                display: flex;
+           
+            }
+            .form h4{
+                text-shadow: 1px 1px  white;
+            }
+
+            .form button{
+                background-color: red;
+                color: white;
+                size: 33%;
+            }
+
+            #boxes{
+                border: 2px solid black;
+                border-radius:1%;
+                margin: 70px;
+                background-color: rgb(192, 15, 15);
+                padding: 1px;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .table{
+                margin: 9px;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                border-radius: 8px;
+                background-color: teal;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(242, 238, 247)
+                
+            
+            }
+
+            .feedback{
+                padding: 77px;
+                display: block;
+            }
+
+            .employee{
+                padding: 47px;
+            }
+        
+            .end{
+                border: 1px solib white;
+                padding: 22px;
+                background-color: lightcyan;
+                display: flex;
+                color: black;
+                flex-direction: row;
+                text-decoration: underline;
+            }
+
+            h3 {
+                text-align:justify;
+                padding-bottom: 10%;
+                display: block;
+                flex-direction: column;
+            }
+
+
+            .contacts{
+                display: block;
+                color: rgb(255, 94, 0);
+                flex-direction: column;
+            }
+
+            .contacts a{
+                color: rgb(255, 94, 0);
+                transition: 1s;
+            }
+
+            .contacts a:hover{
+                color: rgb(3, 3, 3);
+                transition: 1s;
+            }
+
+            .img{
+                display: block;
+                padding-left: 473px;
+                margin: 3px;
+                flex-direction: col;
+            }
+
+            .copyr{
+                padding-bottom: 4px;
+                margin: 10px;
+                display: block;
+                flex-direction: column;
+            }
+
+

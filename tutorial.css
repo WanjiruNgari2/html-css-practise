@@ -1,0 +1,71 @@
+/* transition and animation 
+transition moves from 0 to 100 but
+animation moves to many diffrernt points
+
+div:hover{
+    transform: translateX(100px);
+}.two{
+    transition-timing-function: ease;
+
+div{
+    width: 200px;
+    height: 100px;
+    color: antiquewhite;
+    margin: 10px;
+
+}
+
+.one{
+    background: red;
+    transition: all 1s linear;
+}
+
+.one:hover{
+    background-color: green;
+    transform: translateX(100px);
+}
+
+.animation{
+    background-color: darkviolet;
+    animation-name: name;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: name 17s o.3s delay 2  forwards; 
+  
+
+
+
+@keyframes name{
+    0%{
+        transform: translateX(-100px);
+        background-color: #080707;
+    }
+  
+    15%{
+        transform: translateX(200px);
+        background-color: #40c418;
+    }
+    20%{
+        transform: translateY(400px);
+        background-color: fuchsia;
+    }
+    30%{
+        transform: translateZ(-40PX);
+        background-color: #0ea8ad;
+    }
+    45%{
+        transform: translateY(300px);
+        background-color: #0b0138;
+
+    }
+   
+    75%{
+        transform: translateZ(-100.77px);
+        background-color: rgb(26, 53, 1);
+    }
+     100%{
+        background-color: rgb(141, 10, 197);
+        transform: translateX(100px);
+    }
+} */

@@ -1,0 +1,285 @@
+What's the pupose of the '<!DOCTYPE>' declaration in HTML? 
+    it emphasizes the current version of HTML to be used ie HTML5
+What's the difference btween HTML and XHTML?
+    XHTML is has more strict rules when writing it, esp closing tags
+What are the basic building blocks of HTML?
+    It's made up of the html, head and body elements.
+What's the purpose of the '<head>' element in HTML?
+    It contains essential info about the site eg
+     its title, language used, metadata, links to attached files etc
+Differences between the '<div></div>' and '<span></span>'elements?
+    The div is used to arrange elements that will take up the entire width of the browser while
+    Span is used to arrange or group data that will only take up the space necessary to display them.
+How to link an external CSS file to a HTML doc?
+    <link rel="stylesheet" href="mycss.css">
+What's the purpose of the '<title></title>' element in HTML?
+    used to display as the browser tabs title' when the site loads in a browser.
+    displays the title of a page in search engine results
+    For example if <title>apples.com</title> then the page will load having apples.com as the browser tab title
+How to create a hyperlink in HTML?
+    <a href="google.com">go to google</a>
+Differentiate between '<ul></ul>' and '<ol></ol>' elements
+    <ul></ul> is used for unorder lists while <ol></ol> is used for ordered lists 
+    for example ul for .apples .bananas .kiwi and ol for 1.apples 2.bananas 3.kiwi
+How to create a table 
+    <table border="2">
+        <tr>
+        <th>Names</th>
+        <th>Salary</th>
+        <th>Age</th>
+        </tr>
+        <tr>
+            <td>Sally Piper</td>
+            <td>10000</td>
+            <td>17</td>
+        </tr>
+    </table>
+Purpose of the '<th></th>'element in HTML tables?
+    Used to display table headings
+How to add an image in HTML?
+    <img src="../images/fish.png" alt="fish image" title="fish image" >
+Purpose of the 'alt' attribute in image tags?
+    used to describe the image to the browser
+    So that incase it doesnt load, the text in the alt attribute will be displayed instead
+    Also essential to desc the image to visually impaired people who might not see the image
+How to create a form in HTML?
+    <form method="get" action="submit">
+        name: <input type="text">
+        email: <input type="text">
+        password: <input type="text">
+        gender: <input type="radio" name="gender"> male
+            <input type=" radio" name="gender"> female
+        <textarea>Tell us about yourself:</textarea>
+        Languages:<select multiple>
+        <option>python</option> 
+        <option>JavaScript</option> 
+                    <option>Go</option> 
+                 </select>
+        <input type="submit">
+    </form>
+Differences between '<input type="text">' and '<textarea></textarea>'?
+    <input type="text"> is used when expecting the user to fill in some short details. eg FirstName
+    <textarea> </textarea> is used to accept long paragraghs of data from the user eg: Tell us about yourself
+How to create a dropdown list in HTML?
+    City lived: 
+                <select name="city" multiple> 
+                    <option value="Nrb"> Nairobi</option>
+                    <option value="Tky"> Tokyo</option>
+                    <option value="Bln"> Berlin</option>
+                    <option value="Hsk"> Helsinky</option>
+                </select> <br>
+Whats the purpose of the '<label></label>' element in HTML forms?
+    label is an element that has for attribute that should match an elements id.
+    eg <label for="name">firstname</label> 
+     <input type="text" name="name" id="name"> so fisrtname will have a highlighted text area.
+How to create a checkbox in HTML?
+    <input type="checkbox" value="" name=""> python
+    <input type="checkbox"> JavaScript
+Differences between '<input type="radio">' and '<input type="checkbox">'?
+    <input type="radio"> is used when the user needs to choose between options but 
+    <input type="checkbox"> is used when the user needs to select  more than one options 
+How to create a submit button in HTML?
+    <input type="submit"> or <button type="submit">submit</button>
+What's the purpose of the '<nav></nav>' element in HTML?
+    Used to store the introductory part of the website, ie the navigation links and logo
+How to create a navigation menu in HTML?
+    <body>
+        <div id="2" class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="about us.html">About Us</a> </li>
+                    <li> <a href="products.html">Products</a> </li>
+                    <li> <a href="Careers.html">Careers</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+Differentiate between '<header></header>' and '<footer></footer>' elements
+    header contains the introductory part of the page ie navigation, logo etc.
+    footer contains the ending eg fast links to other pages, copyright info and consistent contacts of the website useful to end users etc.
+How to create a section in HTML?
+   <section>
+    <p>consectetcorporis maxime, nostrum perspiciatis consectetur, rem recusandae suscipit minus ab dolore possimus a eaque.</p>
+    <form>...</form>
+    <img...></img...>
+</section>
+What's the purpose of the '<article></article>' element in HTML?
+    used to begin a section of large paragraghs and  images, like in a magazine.
+How to create a list of items in HTML?
+    <ul>
+        <li> <a href="about us.html">About Us</a> </li>
+        <li> <a href="products.html">Products</a> </li>
+        <li> <a href="Careers.html">Careers</a> </li>
+    </ul>
+Differences between the '<dl></dl>' and '<ul></ul>'elements?
+    'dl' or definition lists are used to display descriptions of sth while
+    <ul></ul> is used to display unordered lists
+How to create a definition list in HTML?
+    <dl>
+        <dt>cats</dt><dd>They have fur and they meow</dd>
+        <dt>cows</dt><dd>They have milk and they moo</dd>
+    </dl>
+What's the purpose of the '<dt></dt>' element in HTML?
+    used to show the titles to be defined of the list on a table
+How to create a definition description in HTML?
+    <dd>They have milk and they moo</dd>
+    used to show the details of the list 
+Differences between '<strong></strong>' and '<b></b>' elements?
+    strong bolds and highlights the text while 'b' only bolds it
+How to create a paragragh in HTML?
+        <p>Lorem ipsum dolor sit amet consectetb vel.</p>
+Whats the purpose of the '<blockquote></blockquote>' element in HTML?
+    Used to display someones direct words in quotes, like in a magazine.
+
+
+    C      S      S   
+What is CSS and what is it used for?
+Stands for Cascading Styles Sheet. Used for styling a document interms of color, sizing, borders etc
+Difference between inline, internal and external css?
+    inline css is where the developer styles an element inside the html tag for example:
+    <img src="../images/fish.png" width="170px" height="120px">
+    external css is where all the styling is writtn in a separate file 
+    like mycss.css and linked to the html page
+    internal css is when the dev uses <style></style> tags and writes
+    all relevant styling there, nomally insude the <head></head> tags 
+    what is the box model in CSS?
+    is the properties assigned to a displayed element, ie the content, padding,border and its margin.
+What are the different parts of the box model?
+    content, ie the actual img or text
+    padding that expands or minimises the appearance of the content without affecting the content
+    margin that spaces the content among other contents. its the space between displayed data.
+    border which encloses the "padding space" of the content
+How do you set the width and height of an element?
+    using the width:20px; and height: 20px;attributes
+What's the difference between the width and max width?
+    width gives the actual width space an element should occupy while
+    max width gives the maximum space the browser should assign to that element
+How do you set the margin and the padding of an element in CSS?
+    usig the margin: 20px; and padding: 13px; as long as you know your devices pixels
+What's the difference between the margin and the padding of an element in CSS?
+    padding that expands or minimises the appearance of the content without affecting the content
+    margin that spaces the content among other contents. its the space between displayed data.
+How do you set the border of an element?
+    using the border:2px solid red; attribute
+What are the different types of CSS Selectors?
+    the id ,class, a, input[type=text], button selectots
+How to select an element by its id in CSS
+    #myid {
+        color: blue;
+        list-style: none
+        justify-content: center 
+    }
+How to select an element by its class in CSS
+ .navbar{
+        color: blue;
+        list-style: none
+        justify-content: center
+    }
+differentiate beween .class and #id Selectors?
+    id selectors are unique identifiers of a selected block of data, while
+    class selectors are general identifiers used to style lots of data that share similar styling 
+How to select an element by its attribute in CSS
+    input[type="text"] {
+        max-width: 30px;
+        color:white;
+    }
+What's the purpose of the :hover pseudo-class?
+    used to style an element whe end users hover a mouse on it
+How do you style links in css?
+     a{
+        color:red
+        text-decoration: underline;
+    }
+What's the purpose of the :visited pseudo-class?
+    used to change the appearance of a link that was alredy clicked by the user
+What's the difference between display:none and visibility:hidden?
+    visibility:hidden shows a space of the content while
+    display:none completely ignores to show the element, 
+    no space is provided for it so users wont know they even exist 
+how do you hide an element in CSS?
+    using display:none or visibility:hidden
+What's the purpose of opacity property?
+    used to control the transparency of an element
+how do you set opacity of an element?
+    opacity: 0.1
+What's the difference between rgba and hsla color models?
+    rgba has colors while hsla controls the hue and saturation
+How do you set the background color of an element?
+    background-color: cyan;
+Whats the purpose of the background-image property?
+    used to set an image as the background of a page or element
+how do you set the background-image in CSS?
+    body{
+        background-image: url"fish.png"
+        background-repeat: no-repeat
+        background-size: contain
+    }
+What's the difference between cover and contain  background sizing?
+    cover will stretch the background image to the whole page while
+    contain will ensure it only displays to your assigned margin pixels.
+How do you set the background size of an element?
+    using either cover or contain properties
+What's the purpose of CSS gradients?
+    used to transition elements to various sizes  dynamically
+how to create a linear gradient in css?
+    div{
+        linear-gradient: to right, red, yellow
+    }
+purpose of CSS transitions?
+    used to move or transform elements when users interact with them dynamically
+how to create a transitions effect in CSS?
+    a:hover{
+        transition: 1s
+    }
+purpose of CSS animations?
+    used to animate elements to various sizes  dynamically
+how to create an animations  in css?
+What's the difference between transform and transition?
+How to rotate an element in CSS?
+    div{
+        rotate: 90deg (red)
+        rotate: 180 deg (blue)
+        rotate: 0deg (green)
+        rotate: 360 deg (black)
+    }
+purpose of the scale property?
+How to scale an element in CSS?
+Purpose of the translate property?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

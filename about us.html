@@ -1,0 +1,237 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="a page to practise YouTube CSS tutorials" />
+        <title>Css-Tutorial</title>
+        <link rel="stylesheet" href="tutorial.css" />
+    </head>
+    <body>
+
+        <div class="one">transition</div>
+        <div class="animation">animation</div>
+
+    </body>
+</html>
+
+
+
+
+<!-- /* selectors include:
+    1.html Element selectors eg h1, p
+    2.grouping selectors eg h1,h2{}
+    3.Id selectors using # as the prefix. must be unique, not reused.
+    4.class selectors has . as the prefix, can be reused
+    */
+/* color properties 
+last color to be specifies is followed
+some selectors have more "entitlement" than others(last rule and specificity)
+red green blue(rgb) values, hexvalues(ffffff)
+red green blue opacity(rgba) values
+*/
+
+/* fontsize, pixels, height, wieght 
+relative-(percentage values)*/ 
+
+/* google fonts: 4 fontfamily, copy the whole link inside the head tag with <link href="" rel="">
+then @import then the url(); in css file top. 
+font family has three values incase browser lacks the first, it tries the sec, then the 3rd */
+
+/* em= relative depending on parent element, 1em=16px(base or default browser) */
+/* calc() performs mathematical equations +* etcmostly for banners*/ -->
+
+<!-- /* 
+line height(0.7em, used to separate lines), 
+letter spacing(7px, used to separate letters individually ),
+word spacind(20px, separated words in a line),
+ text transform(capitalize, uppercase, lowercase), 
+ textdecoration(linethrough, overline, none etc) */ -->
+
+ <!-- /* CSS BOX MODEL: padding(20px, from content to element,
+ margin (0, between elements, or between window margins
+  border(width:10px, style:solid color:red)
+  outline(between margin and border, has utline-offset to you can move the space btwn them )*/
+ -->
+
+ <!-- /* horizontal centering of elements in a page
+for inline elements use textallign center
+for block elements use width:130px and margin: 7px auto;
+ */
+ -->
+
+ <!-- /* border box ensures your elements dont exceed width and height
+by adding padding od 20px to an element with width and height of 200px each
+then the actual space taken will be 240px by 240px. unless you use
+box-sizing: border-box; */
+ -->
+
+ <!-- /* visibility hidden: elements cant be seen but space is created for them
+ display none: elements are not displayed and space aint created for them*/
+ opacity is from 1+(fully dispalyed) upto 0(not displayed)-->
+
+ <!-- /* for images as background  use background-image: url(communities.png);
+background-attachment: fixed ; so the img doesnt move as you scroll
+background-repeat: no-repeat; so small images dont repeat
+background-size: cover; so it covers the whole div
+background-position: chose any that fits for all positions of the page*/
+-->
+
+<!-- image spacing esp for banners:
+ use float:left to push a div to left and anoother to the right
+ then use clear: both to arrange sth outside the floating element -->
+
+ <!-- media queries have syntax: 
+  @media screen and (max-width: 874px) {
+    body{
+        background-color: rgb(10, 223, 124);
+    }.banner{
+        background-color: rgb(167, 5, 199);
+    }h1{
+        color:black;
+        font-size: 70px;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }} which changes element's appearance depending on device width-->
+
+<!-- position can be absolute, relative, fixed, sticky
+ or static -->
+
+ <!-- /* pseudo elements ::before and ::after content 
+content:"" == required and img==doesnt work */
+
+/* p::before{
+    content: "hello";
+    display: block;
+    background: yellow;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(19, 7, 192);
+}
+
+p::after{
+content: "Google me!";
+width: 70px;
+height: 70px;
+background-color: red;
+color:black;
+display:block;
+}
+
+div{
+    width: 70vw;
+    margin: 100px auto;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+div::before{
+    content: "";
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -40px;
+    left: -40px;
+    z-index: -2;
+    transition: all 0.7s linear;
+
+}
+div::after{
+    content: "";
+    background:  rgb(222, 226, 3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -20px;
+    left: -20px;
+    z-index: -1;;
+    transition: all 0.7s linear;
+
+}
+div:hover::after, 
+div:hover::before{
+    top: 0;
+    left: 0;
+    transition: all 0.7s linear;
+} 
+ link: visited :hover :active 
+ html element, general tyles, css variables*/
+ -->
+
+ <!-- /* transition and animation 
+transition moves from 0 to 100 but
+animation moves to many diffrernt points
+
+div:hover{
+    transform: translateX(100px);
+}.two{
+    transition-timing-function: ease;
+
+div{
+    width: 200px;
+    height: 100px;
+    color: antiquewhite;
+    margin: 10px;
+
+}
+
+.one{
+    background: red;
+    transition: all 1s linear;
+}
+
+.one:hover{
+    background-color: green;
+    transform: translateX(100px);
+}
+
+.animation{
+    background-color: darkviolet;
+    animation-name: name;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation: name 17s o.3s delay 2  forwards; 
+  
+
+
+
+@keyframes name{
+    0%{
+        transform: translateX(-100px);
+        background-color: #080707;
+    }
+  
+    15%{
+        transform: translateX(200px);
+        background-color: #40c418;
+    }
+    20%{
+        transform: translateY(400px);
+        background-color: fuchsia;
+    }
+    30%{
+        transform: translateZ(-40PX);
+        background-color: #0ea8ad;
+    }
+    45%{
+        transform: translateY(300px);
+        background-color: #0b0138;
+
+    }
+   
+    75%{
+        transform: translateZ(-100.77px);
+        background-color: rgb(26, 53, 1);
+    }
+     100%{
+        background-color: rgb(141, 10, 197);
+        transform: translateX(100px);
+    }
+} */ -->
